@@ -7,10 +7,9 @@
 
 import UIKit
 
-
-
-
 class MainViewController: UIViewController {
+    
+    static var currentRandomUser: Result?
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var fullNameLabel: UILabel!
@@ -21,24 +20,34 @@ class MainViewController: UIViewController {
     @IBOutlet var genderLabel: UILabel!
     @IBOutlet var dotLabel: UILabel!
     @IBOutlet var ageLabel: UILabel!
+    @IBOutlet var generateButtonOutlet: UIButton!
     
-   static var currentRandomUser: Result?
+    @IBOutlet var stackWithImage: UIStackView!
+    @IBOutlet var stackWithInfo: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.layer.cornerRadius = imageView.frame.width / 2
-        imageView.layer.borderWidth = 2
+        imageView.layer.borderWidth = 1
         imageView.layer.borderColor = UIColor.systemBlue.cgColor
         NetworkManager.generateData()
-        
+        generateButtonOutlet.pulsate()
+        stackWithInfo.isHidden = true
+        stackWithImage.isHidden = true
     }
-    @IBAction func generateButton() {
+    
+    @IBAction func generateButtonPressed() {
+        generateButtonOutlet.setTitle("Next Random Person", for: .normal)
+        stackWithImage.isHidden = false
+        stackWithInfo.isHidden = false
         showInfo()
     }
     
     
+    
     private func showInfo() {
         NetworkManager.generateData()
+        
         guard let randomUser = MainViewController.currentRandomUser else {return}
         
         guard let stringUrl = randomUser.picture?.medium else {return}
@@ -57,8 +66,8 @@ class MainViewController: UIViewController {
         dotLabel.text = randomUser.dob?.date ?? ""
         
     }
-    }
-    
+}
+
 
 
 

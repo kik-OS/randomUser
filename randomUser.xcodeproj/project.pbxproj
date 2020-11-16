@@ -14,7 +14,8 @@
 		E4BFCD10256113280056DE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BFCD0F256113280056DE90 /* Assets.xcassets */; };
 		E4BFCD13256113280056DE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BFCD11256113280056DE90 /* LaunchScreen.storyboard */; };
 		E4BFCD1C256113750056DE90 /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BFCD1B256113750056DE90 /* RandomUser.swift */; };
-		E4BFCD1F256133E20056DE90 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BFCD1E256133E20056DE90 /* networkManager.swift */; };
+		E4BFCD1F256133E20056DE90 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BFCD1E256133E20056DE90 /* NetworkManager.swift */; };
+		E4BFCD2C256244520056DE90 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BFCD2B256244520056DE90 /* Extension + UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		E4BFCD12256113280056DE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4BFCD14256113280056DE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4BFCD1B256113750056DE90 /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
-		E4BFCD1E256133E20056DE90 /* networkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkManager.swift; sourceTree = "<group>"; };
+		E4BFCD1E256133E20056DE90 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E4BFCD2B256244520056DE90 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 				E4BFCD06256113240056DE90 /* AppDelegate.swift */,
 				E4BFCD08256113240056DE90 /* SceneDelegate.swift */,
 				E4BFCD0A256113240056DE90 /* MainViewController.swift */,
-				E4BFCD1E256133E20056DE90 /* networkManager.swift */,
+				E4BFCD2B256244520056DE90 /* Extension + UIButton.swift */,
+				E4BFCD1E256133E20056DE90 /* NetworkManager.swift */,
 				E4BFCD0C256113240056DE90 /* Main.storyboard */,
 				E4BFCD1B256113750056DE90 /* RandomUser.swift */,
 				E4BFCD0F256113280056DE90 /* Assets.xcassets */,
@@ -144,8 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BFCD0B256113240056DE90 /* MainViewController.swift in Sources */,
+				E4BFCD2C256244520056DE90 /* Extension + UIButton.swift in Sources */,
 				E4BFCD07256113240056DE90 /* AppDelegate.swift in Sources */,
-				E4BFCD1F256133E20056DE90 /* networkManager.swift in Sources */,
+				E4BFCD1F256133E20056DE90 /* NetworkManager.swift in Sources */,
 				E4BFCD09256113240056DE90 /* SceneDelegate.swift in Sources */,
 				E4BFCD1C256113750056DE90 /* RandomUser.swift in Sources */,
 			);

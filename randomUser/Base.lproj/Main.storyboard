@@ -35,7 +35,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-gu-7nO">
-                                <rect key="frame" x="24" y="365" width="366" height="271"/>
+                                <rect key="frame" x="24" y="309" width="366" height="271"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-Ku-aGj">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="25"/>
@@ -170,7 +170,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Generate Random Person"/>
                                 <connections>
-                                    <action selector="generateButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sl4-bD-L2r"/>
+                                    <action selector="generateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mja-kZ-RCb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -184,7 +184,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qO9-gu-7nO" secondAttribute="trailing" constant="24" id="R1Y-Vc-Sus"/>
                             <constraint firstItem="4SP-Oh-Y34" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WdM-vI-oBM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4SP-Oh-Y34" secondAttribute="trailing" constant="16" id="X3c-60-31J"/>
-                            <constraint firstItem="qO9-gu-7nO" firstAttribute="top" secondItem="4SP-Oh-Y34" secondAttribute="bottom" constant="80" id="eAs-Ua-497"/>
+                            <constraint firstItem="qO9-gu-7nO" firstAttribute="top" secondItem="4SP-Oh-Y34" secondAttribute="bottom" constant="80" id="eAs-Ua-497">
+                                <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                            </constraint>
                             <constraint firstItem="Djq-ar-uU1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eIZ-ea-8mb"/>
                         </constraints>
                     </view>
@@ -195,9 +197,12 @@
                         <outlet property="emailLabel" destination="7m0-cJ-WDf" id="HDA-rz-XQk"/>
                         <outlet property="fullNameLabel" destination="Gbx-JZ-8Ne" id="fJf-Cq-fJc"/>
                         <outlet property="genderLabel" destination="crR-UV-7d3" id="lHc-JS-6sd"/>
+                        <outlet property="generateButtonOutlet" destination="Djq-ar-uU1" id="r4T-FZ-lWn"/>
                         <outlet property="imageView" destination="MFv-NA-WZK" id="acD-z2-vbq"/>
                         <outlet property="locationLabel" destination="SnQ-Uh-Gxo" id="Eqw-ta-XEz"/>
                         <outlet property="phoneLabel" destination="aMk-Ec-WzV" id="FnB-C0-eu5"/>
+                        <outlet property="stackWithImage" destination="4SP-Oh-Y34" id="QJv-5Y-flq"/>
+                        <outlet property="stackWithInfo" destination="qO9-gu-7nO" id="j8I-ab-ZFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
